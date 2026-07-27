@@ -19,12 +19,12 @@ This project is being built to learn:
 - [x] Send API requests using drug name as input
 - [x] Understand OpenFDA API endpoints and query parameters
 - [ ] Handle API response status codes
-- [ ] Retrieve and inspect raw JSON responses
+- [x] Retrieve and inspect raw JSON responses
 - [ ] Save raw API responses for future processing
 
 ### Data Transformation (Transform)
-- [ ] Explore OpenFDA JSON structure
-- [ ] Identify relevant drug information fields
+- [x] Explore OpenFDA JSON structure
+- [x] Identify relevant drug information fields
 - [ ] Extract important fields:
   - [ ] Drug name
   - [ ] Generic name

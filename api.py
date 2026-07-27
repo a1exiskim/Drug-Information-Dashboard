@@ -1,13 +1,10 @@
 import requests
 
-response = requests.get('https://api.fda.gov/drug/label.json?search=openfda.brand_name:Tylenol')
-data = response.json()
+def get_drug_data(drug_name):
+    url = f'https://api.fda.gov/drug/label.json?search=openfda.brand_name:{drug_name}'
 
-drug = data['results'][0]
+    response = requests.get(url)
+    data = response.json()
 
-# print(drug['openfda']['brand_name'])
-# print(drug['openfda']['generic_name'])
-# print(drug['openfda']['manufacturer_name'])
+    return data
 
-
-print(drug['warnings'][0])

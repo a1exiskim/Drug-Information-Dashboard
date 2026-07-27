@@ -15,9 +15,9 @@ This project is being built to learn:
 
 ### API Integration (Extract)
 - [x] Install and configure `requests` library
-- [ ] Connect Python application to OpenFDA API
-- [ ] Send API requests using drug name as input
-- [ ] Understand OpenFDA API endpoints and query parameters
+- [x] Connect Python application to OpenFDA API
+- [x] Send API requests using drug name as input
+- [x] Understand OpenFDA API endpoints and query parameters
 - [ ] Handle API response status codes
 - [ ] Retrieve and inspect raw JSON responses
 - [ ] Save raw API responses for future processing

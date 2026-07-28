@@ -26,9 +26,9 @@ This project is being built to learn:
 - [x] Explore OpenFDA JSON structure
 - [x] Identify relevant drug information fields
 - [ ] Extract important fields:
-  - [ ] Drug name
-  - [ ] Generic name
-  - [ ] Manufacturer
+  - [x] Drug name
+  - [x] Generic name
+  - [x] Manufacturer
   - [ ] Purpose
   - [ ] Active ingredients
   - [ ] Warnings

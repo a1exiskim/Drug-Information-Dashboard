@@ -29,12 +29,12 @@ This project is being built to learn:
   - [x] Drug name
   - [x] Generic name
   - [x] Manufacturer
-  - [ ] Purpose
-  - [ ] Active ingredients
-  - [ ] Warnings
+  - [x] Purpose
+  - [x] Active ingredients
+  - [x] Warnings
 - [ ] Handle missing or incomplete data
 - [ ] Clean and format extracted information
-- [ ] Create reusable data transformation functions
+- [x] Create reusable data transformation functions
 
 ### Data Storage (Load)
 - [ ] Design a data storage structure

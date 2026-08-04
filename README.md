@@ -51,6 +51,10 @@ This project is being built to learn:
 - [ ] Add error messages for invalid searches
 - [ ] Improve dashboard usability and formatting
 
+## Testing 
+- Transformation function tested using Pytest
+- Fake API response objects to verify extracted fields
+
 ### Future Enhancements
 - [ ] Track drug search history
 - [ ] Add analytics on searched drugs

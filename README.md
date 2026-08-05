@@ -32,7 +32,7 @@ This project is being built to learn:
   - [x] Purpose
   - [x] Active ingredients
   - [x] Warnings
-- [ ] Handle missing or incomplete data
+- [x] Handle missing or incomplete data
 - [ ] Clean and format extracted information
 - [x] Create reusable data transformation functions
 

@@ -54,6 +54,7 @@ This project is being built to learn:
 ## Testing 
 - Transformation function tested using Pytest
 - Fake API response objects to verify extracted fields
+- Updated transformation function tested to verify error catching
 
 ### Future Enhancements
 - [ ] Track drug search history

@@ -25,7 +25,7 @@ This project is being built to learn:
 ### Data Transformation (Transform)
 - [x] Explore OpenFDA JSON structure
 - [x] Identify relevant drug information fields
-- [ ] Extract important fields:
+- [x] Extract important fields:
   - [x] Drug name
   - [x] Generic name
   - [x] Manufacturer
@@ -47,7 +47,7 @@ This project is being built to learn:
 - Each row represents one drug retrieved from the OpenFDA API
 ![Database Schema](./docs/drugschema.png)
 
-### Dashboard Development
+## Dashboard Development
 - [ ] Design dashboard layout
 - [ ] Create user input for drug searches
 - [ ] Connect dashboard to API pipeline

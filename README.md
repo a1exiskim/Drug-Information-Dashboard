@@ -43,6 +43,10 @@ This project is being built to learn:
 - [ ] Insert transformed API data into database
 - [ ] Query stored drug information
 
+## Database Schema
+- Each row represents one drug retrieved from the OpenFDA API
+![Database Schema](./docs/drugschema.png)
+
 ### Dashboard Development
 - [ ] Design dashboard layout
 - [ ] Create user input for drug searches

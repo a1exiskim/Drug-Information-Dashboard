@@ -33,7 +33,7 @@ This project is being built to learn:
   - [x] Active ingredients
   - [x] Warnings
 - [x] Handle missing or incomplete data
-- [ ] Clean and format extracted information
+- [x] Clean and format extracted information
 - [x] Create reusable data transformation functions
 
 ### Data Storage (Load)
@@ -55,6 +55,7 @@ This project is being built to learn:
 - Transformation function tested using Pytest
 - Fake API response objects to verify extracted fields
 - Updated transformation function tested to verify error catching
+- Added missing/empty key handling
 
 ### Future Enhancements
 - [ ] Track drug search history

@@ -37,10 +37,10 @@ This project is being built to learn:
 - [x] Create reusable data transformation functions
 
 ### Data Storage (Load)
-- [ ] Design a data storage structure
+- [x] Design a data storage structure
 - [ ] Store cleaned drug information
-- [ ] Create database tables for drug information
-- [ ] Insert transformed API data into database
+- [x] Create database tables for drug information
+- [x] Insert transformed API data into database
 - [ ] Query stored drug information
 
 ## Database Schema
@@ -60,6 +60,7 @@ This project is being built to learn:
 - Fake API response objects to verify extracted fields
 - Updated transformation function tested to verify error catching
 - Added missing/empty key handling
+- Test loading into postgres 
 
 ### Future Enhancements
 - [ ] Track drug search history

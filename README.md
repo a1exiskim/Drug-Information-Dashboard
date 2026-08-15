@@ -38,10 +38,10 @@ This project is being built to learn:
 
 ### Data Storage (Load)
 - [x] Design a data storage structure
-- [ ] Store cleaned drug information
+- [x] Store cleaned drug information
 - [x] Create database tables for drug information
 - [x] Insert transformed API data into database
-- [ ] Query stored drug information
+- [x] Query stored drug information
 
 ## Database Schema
 - Each row represents one drug retrieved from the OpenFDA API
@@ -61,6 +61,7 @@ This project is being built to learn:
 - Updated transformation function tested to verify error catching
 - Added missing/empty key handling
 - Test loading into postgres 
+- Test retrieving drug in database and drug not in database
 
 ### Future Enhancements
 - [ ] Track drug search history

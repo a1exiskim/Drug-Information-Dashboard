@@ -1,5 +1,6 @@
 import psycopg
 from psycopg.types.json import Jsonb
+from psycopg.rows import dict_row
 
 def connect_to_db():
     connection = psycopg.connect(
@@ -35,3 +36,16 @@ def load_drug(drug, connection):
 
     connection.commit()
     cursor.close()
+
+def get_drug(drug_name, connection):
+    cursor = connection.cursor(row_factory = dict_row)
+
+    cursor.execute(
+        'SELECT * FROM drugs WHERE drug_name = %s',
+        (drug_name,)
+    )
+
+    obtained = cursor.fetchone()
+    cursor.close()
+
+    return obtained

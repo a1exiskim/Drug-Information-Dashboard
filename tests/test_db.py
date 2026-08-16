@@ -17,6 +17,7 @@ def test_loading_drug():
                    ('fake drug',))
     connection.commit()
     cursor.close()
+    connection.close()
 
 
 def test_get_drug():
@@ -36,6 +37,7 @@ def test_get_drug():
 
     connection.commit()
     cursor.close()
+    connection.close()
 
 
 def test_get_drug_not_found():
@@ -50,3 +52,4 @@ def test_get_drug_not_found():
 
     connection.commit()
     cursor.close()
+    connection.close()

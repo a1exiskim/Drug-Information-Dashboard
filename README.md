@@ -62,6 +62,10 @@ This project is being built to learn:
 - Added missing/empty key handling
 - Test loading into postgres 
 - Test retrieving drug in database and drug not in database
+- Mocked the OpenFDA API to test the database-miss path without making real API requests
+- Verified that the API is not called when the requested drug already exists in the database
+- Verified that the API is called exactly once with the requested drug name when the drug is not in the database
+- Mocked load_drug() to verify that the cleaned API data is passed to the database-loading function correctly
 
 ### Future Enhancements
 - [ ] Track drug search history

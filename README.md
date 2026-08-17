@@ -41,8 +41,8 @@ User / Dashboard
                |
                v
           Return drug data
+~~~
 
-'''markdown
 ## Project Progress
 
 ### API Integration (Extract)
@@ -86,6 +86,15 @@ User / Dashboard
 - [ ] Display cleaned drug information
 - [ ] Add error messages for invalid searches
 - [ ] Improve dashboard usability and formatting
+
+## API Development 
+- [x] Create FastAPI application
+- [x] Create drug lookup endpoint
+- [x] Connect API endpoint to database and ETL pipeline
+- [x] Return cleaned drug information as JSON
+- [x] Return 404 response when drug cannot be found
+- [x] Test successful API requests
+- [x] Test unsuccessful API requests
 
 ## Testing 
 - Transformation function tested using Pytest

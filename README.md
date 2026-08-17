@@ -41,7 +41,7 @@ User / Dashboard
                |
                v
           Return drug data
-~~~
+```
 
 ## Project Progress
 

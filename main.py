@@ -12,4 +12,8 @@ def get_drug_endpoint(drug_name: str):
     if obtained is None:
         raise HTTPException(status_code=404, detail="Drug not found")
 
+    connection.close()
+
     return obtained
+
+

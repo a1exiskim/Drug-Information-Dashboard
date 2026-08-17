@@ -1,15 +1,46 @@
 # Drug-Information-Dashboard
 
-A Python application that retrieves drug information from the OpenFDA API and displays relevant information in a dashboard.
+A Python backend application that retrieves, transforms, stores, and serves drug information using the OpenFDA API and PostgreSQL. A dashboard will eventually consume the backend API to display drug information.
 
 ## Project Goal
 
-This project is being built to learn:
+This project is being built to learn and apply:
 - REST APIs
 - JSON data handling
 - Data extraction and transformation
-- Database integration
+- PostgreSQL database integration
+- Backend API development with FastAPI
+- Automated testing with Pytest
 - Data visualization
+
+## Architecture
+
+The application follows an ETL-style pipeline with a REST API layer:
+
+```text
+User / Dashboard
+       |
+       v
+   FastAPI API
+       |
+       v
+   PostgreSQL
+       |
+       |-- Drug exists --> Return stored data
+       |
+       |-- Drug missing
+               |
+               v
+          OpenFDA API
+               |
+               v
+          Transform data
+               |
+               v
+        Store in PostgreSQL
+               |
+               v
+          Return drug data
 
 ## Project Progress
 

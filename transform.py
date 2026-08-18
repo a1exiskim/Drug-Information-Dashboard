@@ -25,18 +25,22 @@ def clean_drug_data(drug):
     warnings = drug.get('warnings', [default])
     if warnings == []:
         warnings = [default] 
+    warnings = warnings[0]
     
     dosage_and_administration = drug.get('dosage_and_administration', [default])
     if dosage_and_administration == []:
         dosage_and_administration = [default]
+    dosage_and_administration = dosage_and_administration[0]
 
     drug_purpose = drug.get('purpose', [default])
     if drug_purpose == []:
         drug_purpose = [default]
+    drug_purpose = drug_purpose[0]
 
     active_ingredient = drug.get('active_ingredient', [default])
     if active_ingredient == []:
         active_ingredient = [default]
+    active_ingredient = active_ingredient[0]
 
     cleaned_drug = {
         'drug_name': drug_name,

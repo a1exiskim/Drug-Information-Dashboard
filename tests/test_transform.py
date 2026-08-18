@@ -64,19 +64,19 @@ def test_manufacturer_name():
 
 def test_warnings():
     cleaned_drug_data = clean_drug_data(fake_drug_1)
-    assert cleaned_drug_data['warnings'] == ['fake warning']
+    assert cleaned_drug_data['warnings'] == 'fake warning'
 
 def test_purpose():
     cleaned_drug_data = clean_drug_data(fake_drug_1)
-    assert cleaned_drug_data['purpose'] == ['fake purpose']
+    assert cleaned_drug_data['purpose'] == 'fake purpose'
 
 def test_dosage_and_administration():
     cleaned_drug_data = clean_drug_data(fake_drug_1)
-    assert cleaned_drug_data['dosage_and_administration'] == ['fake dosage and administration']
+    assert cleaned_drug_data['dosage_and_administration'] == 'fake dosage and administration'
 
 def test_active_ingredient():
     cleaned_drug_data = clean_drug_data(fake_drug_1)
-    assert cleaned_drug_data['active_ingredient'] == ['fake ingredients']
+    assert cleaned_drug_data['active_ingredient'] == 'fake ingredients'
 
 def test_empty_brand_name():
     with pytest.raises(KeyError):
@@ -85,11 +85,11 @@ def test_empty_brand_name():
 def test_missing_keys():
     cleaned_drug_data = clean_drug_data(fake_drug_3)
     assert cleaned_drug_data['manufacturer'] == 'No information available'
-    assert cleaned_drug_data['warnings'] == ['No information available']
-    assert cleaned_drug_data['purpose'] == ['No information available']
-    assert cleaned_drug_data['dosage_and_administration'] == ['No information available']
-    assert cleaned_drug_data['active_ingredient'] == ['No information available']
+    assert cleaned_drug_data['warnings'] == 'No information available'
+    assert cleaned_drug_data['purpose'] == 'No information available'
+    assert cleaned_drug_data['dosage_and_administration'] == 'No information available'
+    assert cleaned_drug_data['active_ingredient'] == 'No information available'
 
 def test_empty_keys():
     cleaned_drug_data = clean_drug_data(fake_drug_4)
-    assert cleaned_drug_data['active_ingredient'] == ['No information available']
+    assert cleaned_drug_data['active_ingredient'] == 'No information available'

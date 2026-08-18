@@ -30,7 +30,7 @@ def test_get_drug():
 
     fake_drug_row = get_drug('fake drug', connection)
     assert fake_drug_row['drug_name'] == 'fake drug'
-    assert fake_drug_row['warnings'] == ['fake warning']
+    assert fake_drug_row['warnings'] == 'fake warning'
 
     cursor.execute('DELETE FROM drugs WHERE drug_name = %s', 
                    ('fake drug',))

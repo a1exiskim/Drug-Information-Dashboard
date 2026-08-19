@@ -13,35 +13,10 @@ This project is being built to learn and apply:
 - Automated testing with Pytest
 - Data visualization
 
-## Architecture
 
-The application follows an ETL-style pipeline with a REST API layer:
+## System Architecture
 
-```text
-User / Dashboard
-       |
-       v
-   FastAPI API
-       |
-       v
-   PostgreSQL
-       |
-       |-- Drug exists --> Return stored data
-       |
-       |-- Drug missing
-               |
-               v
-          OpenFDA API
-               |
-               v
-          Transform data
-               |
-               v
-        Store in PostgreSQL
-               |
-               v
-          Return drug data
-```
+![System Architecture](./docs/SystemArchitecture.png)
 
 ## Project Progress
 

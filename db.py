@@ -13,29 +13,28 @@ def connect_to_db():
     return connection
 
 def load_drug(drug, connection):
-    cursor = connection.cursor()
 
-    cursor.execute('INSERT INTO drugs (' \
-    '"drug_name", ' \
-    '"generic_name",' \
-    '"manufacturer",' \
-    '"purpose",' \
-    '"warnings",' \
-    '"dosage_and_administration",' \
-    '"active_ingredient") ' \
-    'VALUES(%s, %s, %s, %s, %s, %s, %s)', 
-    (drug['drug_name'],
-    drug['generic_name'],
-    drug['manufacturer'],
-    Jsonb(drug['purpose']),
-    Jsonb(drug['warnings']),
-    Jsonb(drug['dosage_and_administration']),
-    Jsonb(drug['active_ingredient']))
+    with connection.transaction():
+        with connection.cursor() as cursor:
+            cursor.execute('INSERT INTO drugs (' \
+            '"drug_name", ' \
+            '"generic_name",' \
+            '"manufacturer",' \
+            '"purpose",' \
+            '"warnings",' \
+            '"dosage_and_administration",' \
+            '"active_ingredient") ' \
+            'VALUES(%s, %s, %s, %s, %s, %s, %s)', 
+            (drug['drug_name'],
+            drug['generic_name'],
+            drug['manufacturer'],
+            Jsonb(drug['purpose']),
+            Jsonb(drug['warnings']),
+            Jsonb(drug['dosage_and_administration']),
+            Jsonb(drug['active_ingredient']))
 
-    )
-
-    connection.commit()
-    cursor.close()
+        )
+    
 
 def get_drug(drug_name, connection):
     cursor = connection.cursor(row_factory = dict_row)

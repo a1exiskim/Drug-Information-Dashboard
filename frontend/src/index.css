@@ -1,8 +1,8 @@
 :root {
-  --paper: #fbfaf6;
+  --paper: #b7daed;
   --paper-raised: #ffffff;
-  --ink: #1c2321;
-  --ink-soft: #4a4740;
+  --ink: #000000;
+  --ink-soft: #000000;
   --muted: #83796a;
   --line: #ddd6c6;
   --line-strong: #c7bea9;
@@ -15,7 +15,7 @@
   --font-body: 'Source Serif 4', serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 * {

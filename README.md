@@ -6,14 +6,12 @@ The application uses a database-first lookup strategy: if a drug already exists 
 
 ## Project Goal
 
-This project is being built to learn and apply:
+This project was built to learn and apply:
 - REST APIs
 - JSON data handling
 - Data extraction and transformation
 - PostgreSQL database integration
 - Backend API development with FastAPI
-- Automated testing with Pytest
-- Data visualization
 
 
 ## Features 
@@ -68,7 +66,7 @@ Transformed drug information is stored in PostgreSQL. Before making a new OpenFD
 
 
 ## Database Schema
-- Each row represents one drug retrieved from the OpenFDA API
+Each row represents one drug retrieved from the OpenFDA API
 
 ![Database Schema](./docs/drugschema.png)
 
@@ -101,7 +99,7 @@ The frontend communicates with the FastAPI backend rather than directly accessin
 ## Testing 
 
 The project uses Pytest to test the data pipeline and backend behavior
-- Tests cover:
+Tests cover:
 - Drug data transformation
 - Missing and empty API fields
 - API error handling
@@ -120,8 +118,10 @@ External API calls are mocked where appropriate so that tests remain determinist
 ### Backend 
 
 Install the Python dependencies and configure a local PostgreSQL database
+
 Start the FastAPI application with:
   uvicorn main:app --reload
+
 The backend will run locally on:
   http://localhost:8000
 
@@ -129,10 +129,13 @@ The backend will run locally on:
 
 Navigate to the frontend directory:
   cd frontend
+
 Install the JavaScript dependencies:
   npm install
+
 Start the development server:
   npm run dev
+
 The dashboard will be available at:
   http://localhost:5173
 

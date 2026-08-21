@@ -99,6 +99,7 @@ The frontend communicates with the FastAPI backend rather than directly accessin
 ## Testing 
 
 The project uses Pytest to test the data pipeline and backend behavior
+
 Tests cover:
 - Drug data transformation
 - Missing and empty API fields
